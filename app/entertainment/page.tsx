@@ -27,7 +27,7 @@ export default function EntertainmentPage() {
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-yellow-500/5 mix-blend-overlay z-0 pointer-events-none"></div>
                     <div className="h-48 overflow-hidden relative">
                         <img
-                            src="/freeze-band.png"
+                            src="/the-greys/freeze-band.png"
                             alt="Freeze Band Concert"
                             className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                         />

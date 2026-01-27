@@ -11,7 +11,7 @@ export default function EventsPage() {
             date: "12-14 MAR",
             time: "10:00",
             // Using the newly generated hero banner here
-            image: "/hero-banner.png",
+            image: "/the-greys/hero-banner.png",
             title: "147th Battle of the Blues",
             location: "SSC Grounds, Colombo",
             description: "The 147th Encounter. Three days of grit, glory, and tradition. Join the exclusive Greys pavilion for premium hospitality and the best view of the pitch.",
@@ -20,7 +20,7 @@ export default function EventsPage() {
         {
             date: "21 MAR",
             time: "09:30",
-            image: "/mustangs.png",
+            image: "/the-greys/mustangs.png",
             title: "Mustangs Trophy 2026",
             location: "SSC Grounds, Colombo",
             description: "The limited overs encounter. A faster pace, a louder crowd, and the same historic rivalry. Tickets for the Mustang's Tent are strictly limited.",
@@ -29,7 +29,7 @@ export default function EventsPage() {
         {
             date: "05 FEB",
             time: "19:00",
-            image: "/social.png",
+            image: "/the-greys/social.png",
             title: "The Stable: Pre-Season Social",
             location: "The Grey Horse Pub, London",
             description: "Kick off the season with fellow alumni. Live screening of the 1st XI warmup matches and a Q&A with past captains.",
