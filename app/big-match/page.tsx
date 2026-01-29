@@ -2,14 +2,15 @@
 import Link from 'next/link';
 import { ArrowLeft, Trophy, Calendar, MapPin, Utensils, BookOpen, Clock, Users, Music, ShoppingBag, Camera, MessageCircle, Star, MessageSquare, Smartphone, Twitter, Facebook, Instagram, Globe } from 'lucide-react';
 
-export default function Home() {
+export default function BigMatch() {
     return (
-        <main className="min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-400 via-gray-500 to-gray-600 text-black font-serif pb-24 relative selection:bg-yellow-700 selection:text-white">
+        <main className="min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-200 via-gray-300 to-gray-400 text-black font-serif pb-24 relative selection:bg-yellow-700 selection:text-white">
 
             {/* Nav */}
             <nav className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center z-50 bg-championship-white/90 backdrop-blur-md border-b border-burnished-silver/20">
-                {/* Back button removed as this is now the Home page */}
-                <div className="w-5"></div>
+                <Link href="/" className="text-black hover:text-royal-gold transition-colors">
+                    <ArrowLeft size={20} strokeWidth={1} />
+                </Link>
                 <div className="text-center">
                     <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-royal-gold font-medium">147th Battle of the Blues</p>
                 </div>
@@ -122,12 +123,12 @@ export default function Home() {
                     <h2 className="text-4xl font-serif text-royal-gold mt-2">Match Essentials</h2>
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-4 md:gap-12">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8">
                     {/* Tickets */}
-                    <div className="group text-center w-[45%] md:w-64">
+                    <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-greys/tickets-landing.png" className="w-full h-full object-cover transition-all duration-500" alt="Tickets" />
+                            <img src="/the-greys/big-match-poster.png" className="w-full h-full object-cover transition-all duration-500" alt="Tickets" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">Tickets</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Availability, Pickup Points & Ticket WhatsApp Group</p>
@@ -135,36 +136,40 @@ export default function Home() {
                     </div>
 
                     {/* Gallery */}
-                    <div className="group text-center w-[45%] md:w-64">
+                    <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/social.png" className="w-full h-full object-cover transition-all duration-500" alt="Gallery" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">The Gallery</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Uncurated & Unfiltered</p>
-                        <Link href="/gallery" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Upload / View</Link>
+                        <Link href="#" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Upload / View</Link>
                     </div>
 
-
-
-                    {/* History Video */}
-                    <div className="group text-center w-[45%] md:w-64">
-                        <div className="w-full aspect-video mx-auto mb-4 overflow-hidden rounded-lg relative shadow-lg bg-black">
-                            <iframe
-                                className="w-full h-full object-cover"
-                                src="https://www.youtube.com/embed/d1Q3opZzslA"
-                                title="History of Royal Thomian"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
+                    {/* Humour */}
+                    <div className="group text-center">
+                        <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
+                            <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
+                            <img src="/the-greys/humour-rumour.png" className="w-full h-full object-cover transition-all duration-500" alt="Humour" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">About the Royal Thomian and The Grey</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">A legacy of brotherhood and rivalry since 1879</p>
-                        <Link href="/history" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Watch Full Story</Link>
+                        <h3 className="font-serif text-lg mb-2">Humour & Rumour</h3>
+                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Funny images, stories, sledging, memories & gossip</p>
+                        <Link href="#" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Read Details</Link>
+                    </div>
+
+                    {/* Food & Spirits */}
+                    <div className="group text-center">
+                        <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
+                            <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
+                            <img src="/the-greys/food-spirits.png" className="w-full h-full object-cover transition-all duration-500" alt="Food & Spirits" />
+                        </div>
+                        <h3 className="font-serif text-lg mb-2">Food & Spirits</h3>
+                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Arrack, Champagne, Cocktails & Special Offers</p>
+                        <Link href="#" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">VIEW OFFERS</Link>
                     </div>
 
                     {/* The Grey Beat (Entertainment) - Row 2 */}
-                    <div className="group text-center w-[45%] md:w-64">
+                    <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/freeze-band.png" className="w-full h-full object-cover transition-all duration-500" alt="Entertainment" />
@@ -174,37 +179,37 @@ export default function Home() {
                         <Link href="/entertainment" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Lineup</Link>
                     </div>
 
-                    {/* Food & Spirits */}
-                    <div className="group text-center w-[45%] md:w-64">
+                    {/* Grey Offers (Renamed from Grey Friends) */}
+                    <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-greys/food-spirits.png" className="w-full h-full object-cover transition-all duration-500" alt="Food & Spirits" />
+                            <img src="/the-greys/grey-offers.png" className="w-full h-full object-cover transition-all duration-500" alt="Grey Offers" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">Food & Spirits</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Menus, Bottle Prices & Corkage Policy</p>
-                        <Link href="/food-spirits" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">View Menu</Link>
+                        <h3 className="font-serif text-lg mb-2">The Grey Offers</h3>
+                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Vouchers, discounts and invites offered to Grey Members</p>
+                        <Link href="#" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">View Offers</Link>
                     </div>
 
                     {/* Grey Merchandise - Row 2 */}
-                    <div className="group text-center w-[45%] md:w-64">
+                    <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-greys/merchandise-landing-v2.png" className="w-full h-full object-cover transition-all duration-500" alt="Shop" />
+                            <img src="/the-greys/mustangs.png" className="w-full h-full object-cover transition-all duration-500" alt="Shop" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">Grey Merchandise</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Official & UNOFFICIAL Merch For Sale</p>
-                        <Link href="/merchandise" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Browse Store</Link>
+                        <Link href="#" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Browse Store</Link>
                     </div>
 
                     {/* Grey Meet-Up */}
-                    <div className="group text-center w-[45%] md:w-64">
+                    <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/grey-meetups.png" className="w-full h-full object-cover transition-all duration-500" alt="Meetups" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">Grey Meet-Ups</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Official & informal gatherings • Colombo, Overseas & Virtual plus useful links</p>
-                        <Link href="/meetups" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Find a Meet-Up</Link>
+                        <Link href="#" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Find a Meet-Up</Link>
                     </div>
                 </div>
 
@@ -245,8 +250,8 @@ export default function Home() {
 
             {/* Guest Registry */}
             <section id="registry" className="max-w-4xl mx-auto px-8 py-16 text-center border-t border-midnight-slate/10 bg-gray-50/50">
-                <h3 className="text-2xl font-serif text-black mb-6">Who is Where</h3>
-                <p className="font-sans text-xs text-black/70 mb-8">If you have tickets and plans to attend other stands or events outside, and want The Grey to know - log it here.</p>
+                <h3 className="text-2xl font-serif text-black mb-6">Who's attending where?</h3>
+                <p className="font-sans text-xs text-black/70 mb-8">Find friends or check-in to your tent.</p>
 
                 <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
                     <input type="text" placeholder="Search Name..." className="bg-white border border-gray-200 px-6 py-3 w-full md:w-64 text-sm font-sans focus:outline-none focus:border-midnight-slate transition-colors" />

@@ -9,8 +9,8 @@ const config: Config = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['var(--font-inter)'],
-                serif: ['var(--font-playfair)'],
+                sans: ['Inter', 'sans-serif'],
+                serif: ['Playfair Display', 'serif'],
             },
             colors: {
                 silver: {
@@ -20,12 +20,28 @@ const config: Config = {
                     400: '#a3a3a3',
                     500: '#737373',
                 },
-                // Horse Color Palette
-                'iron': '#0F1115',      // Raw Gunmetal / Steel - Backgrounds
-                'blue-roan': '#1E2329', // Cool-Toned Slate - Cards/Sections
-                'rose-grey': '#C8C2BC', // Warm Cement - Warm accents/text
-                'dapple': '#7A7D85',    // Polished Concrete - Muted visuals
-                'fleabitten': '#ECECE9' // Speckled Granite - Main text
+                // Grey Horse Elite Palette
+                'charcoal': '#1A1A1A',  // Deep background
+                'slate-grey': '#2D3436', // Cards
+                'brushed-silver': '#B0B3B8', // Accents
+
+                // Royal-Thomian Palette
+                'royal-gold': '#FFD700', // Bright Logo Gold
+                'royal-blue': '#1E3A8A', // Deep Royal Blue
+                'thomian-blue': '#000033', // Dark Navy/Blackish Blue
+                'thomian-black': '#050505', // True Black
+
+                // Championship Heritage Palette
+                'championship-white': '#F9FAFB', // Clean airy luxury
+                'midnight-slate': '#111827',     // Historic grit
+                'burnished-silver': '#8E8E93',   // Antique silver
+
+                // Legacy / Horse Color Palette (Keeping for reference or mix)
+                'iron': '#0F1115',      // Raw Gunmetal / Steel
+                'blue-roan': '#1E2329', // Cool-Toned Slate
+                'rose-grey': '#C8C2BC', // Warm Cement
+                'dapple': '#7A7D85',    // Polished Concrete
+                'fleabitten': '#ECECE9' // Speckled Granite
             }
         },
     },
