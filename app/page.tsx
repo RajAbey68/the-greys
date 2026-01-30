@@ -174,15 +174,15 @@ export default function Home() {
                         <Link href="/entertainment" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Lineup</Link>
                     </div>
 
-                    {/* Food & Spirits */}
+                    {/* The Grey Offers */}
                     <div className="group text-center w-[45%] md:w-64">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-greys/food-spirits.png" className="w-full h-full object-cover transition-all duration-500" alt="Food & Spirits" />
+                            <img src="/the-greys/grey-offers.png" className="w-full h-full object-cover transition-all duration-500" alt="Grey Offers" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">Food & Spirits</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Menus, Bottle Prices & Corkage Policy</p>
-                        <Link href="/food-spirits" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">View Menu</Link>
+                        <h3 className="font-serif text-lg mb-2">The Grey Offers</h3>
+                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Vouchers, discounts and invites offered to Grey Members</p>
+                        <Link href="/offers" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">View Offers</Link>
                     </div>
 
                     {/* Grey Merchandise - Row 2 */}
