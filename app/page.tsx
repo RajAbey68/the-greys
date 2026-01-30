@@ -99,15 +99,15 @@ export default function Home() {
             </header>
 
             {/* Sponsors Carousel */}
-            <section className="max-w-7xl mx-auto px-6 -mt-16 relative z-30 mb-16">
-                <div className="bg-white p-10 shadow-2xl shadow-black/20 border border-black/10 flex flex-col items-center justify-center text-center rounded-lg">
-                    <h3 className="text-royal-gold uppercase tracking-[0.25em] text-sm font-bold mb-8">Official Sponsors</h3>
-                    <div className="flex gap-16 md:gap-24 overflow-x-auto w-full justify-center items-center py-4 no-scrollbar">
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
+            <section className="w-full max-w-[95%] mx-auto -mt-24 relative z-30 mb-20">
+                <div className="bg-white py-16 px-8 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border border-black/10 flex flex-col items-center justify-center text-center rounded-xl">
+                    <h3 className="text-royal-gold uppercase tracking-[0.3em] text-xl md:text-3xl font-black mb-12">Official Sponsors</h3>
+                    <div className="flex gap-12 md:gap-32 overflow-x-auto w-full justify-center items-center py-8 no-scrollbar">
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-40 md:h-64 w-auto object-contain hover:scale-110 transition-transform duration-500 filter hover:brightness-110" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-40 md:h-64 w-auto object-contain hover:scale-110 transition-transform duration-500 filter hover:brightness-110" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-40 md:h-64 w-auto object-contain hover:scale-110 transition-transform duration-500 filter hover:brightness-110" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-40 md:h-64 w-auto object-contain hover:scale-110 transition-transform duration-500 filter hover:brightness-110" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-40 md:h-64 w-auto object-contain hover:scale-110 transition-transform duration-500 filter hover:brightness-110" alt="Sponsor" />
                     </div>
                 </div>
             </section>
