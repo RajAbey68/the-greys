@@ -40,7 +40,7 @@ export default function MerchandisePage() {
             <section className="max-w-6xl mx-auto px-6 mb-16">
                 <div className="relative w-full h-[50vh] md:h-[60vh] rounded-sm overflow-hidden shadow-2xl shadow-black/20 group">
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors z-10"></div>
-                    <img src="/the-greys/merchandise-landing-v2.png" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="New Collection" />
+                    <img src="/the-grey/merchandise-landing-v2.png" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" alt="New Collection" />
 
                     <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 z-20 text-white">
                         <span className="bg-royal-gold text-black text-[9px] font-bold uppercase tracking-widest px-3 py-1 mb-3 inline-block">New Arrival</span>

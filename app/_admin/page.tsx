@@ -31,7 +31,7 @@ export default function AdminPage() {
         await supabase.auth.signInWithOAuth({
             provider: 'google',
             options: {
-                redirectTo: `${window.location.origin}/the-greys/admin`,
+                redirectTo: `${window.location.origin}/the-grey/admin`,
             },
         });
     };
