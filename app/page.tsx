@@ -139,7 +139,7 @@ export default function Home() {
                             <img src="/the-greys/social.png" className="w-full h-full object-cover transition-all duration-500" alt="Gallery" />
                         </div>
                         <h3 className="font-serif text-2xl font-bold text-black mb-3">The Gallery</h3>
-                        <p className="font-sans text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">Uncurated & Unfiltered</p>
+                        <p className="font-serif text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">Uncurated & Unfiltered</p>
                         <Link href="/gallery" className="inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-gray-800 transition-colors">Upload / View</Link>
                     </div>
 
