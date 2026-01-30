@@ -99,15 +99,15 @@ export default function Home() {
             </header>
 
             {/* Sponsors Carousel */}
-            <section className="max-w-6xl mx-auto px-6 -mt-12 relative z-30 mb-8">
-                <div className="bg-white p-6 shadow-xl shadow-black/5 border border-black/5 flex flex-col items-center justify-center text-center">
-                    <h3 className="text-royal-gold uppercase tracking-widest text-[10px] mb-4">Official Sponsors</h3>
-                    <div className="flex gap-12 overflow-x-auto w-full justify-center items-center py-2 no-scrollbar">
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
-                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
+            <section className="max-w-7xl mx-auto px-6 -mt-16 relative z-30 mb-16">
+                <div className="bg-white p-10 shadow-2xl shadow-black/20 border border-black/10 flex flex-col items-center justify-center text-center rounded-lg">
+                    <h3 className="text-royal-gold uppercase tracking-[0.25em] text-sm font-bold mb-8">Official Sponsors</h3>
+                    <div className="flex gap-16 md:gap-24 overflow-x-auto w-full justify-center items-center py-4 no-scrollbar">
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform hover:scale-105 duration-300" alt="Sponsor" />
                     </div>
                 </div>
             </section>
