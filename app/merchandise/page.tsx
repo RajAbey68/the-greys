@@ -7,16 +7,16 @@ export default function MerchandisePage() {
         <main className="min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-400 via-gray-500 to-gray-600 text-black font-serif pb-24 relative selection:bg-yellow-700 selection:text-white">
 
             {/* Nav */}
-            <nav className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center z-50 bg-championship-white/90 backdrop-blur-md border-b border-burnished-silver/20">
-                <Link href="/" className="text-black hover:text-royal-gold transition-colors flex items-center gap-2 group">
-                    <ArrowLeft size={20} strokeWidth={1} className="group-hover:-translate-x-1 transition-transform" />
-                    <span className="font-sans text-[10px] uppercase tracking-widest hidden md:inline">Back to Match</span>
+            <nav className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center z-50 bg-championship-white/90 backdrop-blur-md border-b border-burnished-silver/20 h-20">
+                <Link href="/" className="text-black hover:text-royal-gold transition-colors flex items-center gap-3 group">
+                    <ArrowLeft size={24} strokeWidth={1.5} className="group-hover:-translate-x-1 transition-transform" />
+                    <span className="font-sans text-xs font-bold uppercase tracking-widest hidden md:inline">Back to Match</span>
                 </Link>
                 <div className="text-center">
-                    <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-royal-gold font-medium">The Grey Shop</p>
+                    <p className="font-sans text-xs uppercase tracking-[0.25em] text-royal-gold font-medium">The Grey Shop</p>
                 </div>
-                <div className="w-5">
-                    <ShoppingBag size={20} strokeWidth={1} className="text-black" />
+                <div className="w-10 h-10 flex items-center justify-center">
+                    <ShoppingBag size={24} strokeWidth={1} className="text-black" />
                 </div>
             </nav>
 
