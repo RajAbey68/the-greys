@@ -1,26 +1,47 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Camera, Upload, Heart, Share2, PlayCircle, Star, Video } from 'lucide-react';
+import { ArrowLeft, Upload, Heart, Video, PlayCircle, Star, X } from 'lucide-react';
 
 export default function GalleryPage() {
-    return (
-        <main className="min-h-screen bg-gray-50 text-black font-serif pb-24 relative selection:bg-[#FFD700] selection:text-white">
+    // Basic state for locally previewing uploaded images
+    const [userUploads, setUserUploads] = useState<string[]>([]);
+    const fileInputRef = useRef<HTMLInputElement>(null);
 
-            {/* Nav */}
-            <nav className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
-                <Link href="/" className="text-black hover:text-[#FFD700] transition-colors flex items-center gap-2 group">
-                    <ArrowLeft size={20} strokeWidth={1} className="group-hover:-translate-x-1 transition-transform" />
-                    <span className="font-sans text-[10px] uppercase tracking-widest hidden md:inline">The Grey</span>
+    const handleUploadClick = () => {
+        fileInputRef.current?.click();
+    };
+
+    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            // Create a local URL for preview
+            const objectUrl = URL.createObjectURL(file);
+            setUserUploads(prev => [objectUrl, ...prev]);
+
+            // In a real app, we would upload to Supabase here
+            console.log("File selected:", file.name);
+            alert("Great shot! Your photo has been added to the local preview feed. (Backend upload pending configuration)");
+        }
+    };
+
+    return (
+        <main className="min-h-screen bg-gray-50 text-black font-serif pb-32 relative selection:bg-[#FFD700] selection:text-white">
+
+            {/* Nav - BIGGER */}
+            <nav className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm h-20">
+                <Link href="/" className="text-black hover:text-[#FFD700] transition-colors flex items-center gap-3 group">
+                    <ArrowLeft size={24} strokeWidth={1.5} className="group-hover:-translate-x-1 transition-transform" />
+                    <span className="font-sans text-xs font-bold uppercase tracking-widest hidden md:inline">The Grey</span>
                 </Link>
                 <div className="text-center">
-                    <p className="font-serif text-lg font-bold text-[#1E3A8A] tracking-wide">The Gallery</p>
-                    <p className="font-sans text-[8px] uppercase tracking-[0.2em] text-gray-500">The Grey Enclosure</p>
+                    <p className="font-serif text-2xl font-bold text-[#1E3A8A] tracking-wide">The Gallery</p>
+                    <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-gray-500 mt-1">The Grey Enclosure</p>
                 </div>
-                <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
-                    <div className="w-1 h-1 bg-black rounded-full space-x-0.5"></div>
-                    <div className="w-4 h-0.5 bg-black rounded-full"></div>
+                <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center border border-gray-200">
+                    <div className="w-1.5 h-1.5 bg-black rounded-full space-x-0.5"></div>
+                    <div className="w-5 h-0.5 bg-black rounded-full ml-0.5"></div>
                 </div>
             </nav>
 
@@ -58,6 +79,19 @@ export default function GalleryPage() {
             {/* Structured Masonry Grid */}
             <section className="px-4 md:px-6 mb-24">
                 <div className="columns-2 gap-4 space-y-4">
+
+                    {/* User Uploads inserted here */}
+                    {userUploads.map((src, index) => (
+                        <div key={index} className="break-inside-avoid relative rounded-xl overflow-hidden group mb-4 animate-fade-in">
+                            <img src={src} className="w-full aspect-square object-cover" alt="User Upload" />
+                            <div className="p-3 bg-gray-100">
+                                <h4 className="font-bold text-xs text-black mb-1">Just Now</h4>
+                                <div className="flex items-center gap-1 text-[9px] text-[#1E3A8A]">
+                                    <Heart size={10} className="fill-[#1E3A8A]" /> New
+                                </div>
+                            </div>
+                        </div>
+                    ))}
 
                     {/* Item 1 - Video Style */}
                     <div className="break-inside-avoid relative rounded-xl overflow-hidden group mb-4">
@@ -129,12 +163,19 @@ export default function GalleryPage() {
             </section>
 
             {/* Floating Upload Button / Fixed Bottom */}
-            <div className="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-white via-white/80 to-transparent z-40 pointer-events-none flex justify-center pb-8">
+            <div className="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-white via-white/80 to-transparent z-40 pointer-events-none flex justify-center pb-24">
+                <input
+                    type="file"
+                    ref={fileInputRef}
+                    className="hidden"
+                    accept="image/*"
+                    onChange={handleFileChange}
+                />
                 <button
-                    className="pointer-events-auto bg-gradient-to-r from-[#1E3A8A] to-black text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest shadow-2xl flex items-center gap-2 hover:scale-105 transition-transform"
-                    onClick={() => alert("Upload feature coming soon!")}
+                    className="pointer-events-auto bg-gradient-to-r from-[#1E3A8A] to-black text-white px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest shadow-2xl flex items-center gap-3 hover:scale-105 transition-transform"
+                    onClick={handleUploadClick}
                 >
-                    <Upload size={14} /> Upload Your Moment
+                    <Upload size={18} /> Upload Your Moment
                 </button>
             </div>
 

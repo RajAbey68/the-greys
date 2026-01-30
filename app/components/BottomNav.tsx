@@ -10,30 +10,30 @@ export default function BottomNav() {
     const isActive = (path: string) => pathname === path;
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 bg-[#1A1A1A] border-t border-white/10 px-6 py-3 flex justify-around items-center z-50 pb-6 shadow-2xl backdrop-blur-md bg-opacity-95">
-            <Link href="/" className={`flex flex-col items-center gap-1 transition-colors group ${isActive('/') ? 'text-[#FFD700]' : 'text-gray-400 hover:text-white'}`}>
-                <Home size={20} className="stroke-[1.5]" />
-                <span className="text-[9px] tracking-widest uppercase font-medium">Home</span>
+        <div className="fixed bottom-0 left-0 right-0 bg-[#1A1A1A] border-t border-white/10 px-4 py-4 flex justify-between items-center z-50 pb-8 shadow-2xl backdrop-blur-md bg-opacity-95">
+            <Link href="/" className={`flex flex-col items-center gap-2 px-2 transition-colors group ${isActive('/') ? 'text-[#FFD700]' : 'text-gray-400 hover:text-white'}`}>
+                <Home size={26} className="stroke-[1.5]" />
+                <span className="text-[10px] tracking-widest uppercase font-bold">Home</span>
             </Link>
 
-            <Link href="/gallery" className={`flex flex-col items-center gap-1 transition-colors group ${isActive('/gallery') ? 'text-[#FFD700]' : 'text-gray-400 hover:text-white'}`}>
-                <CameraIcon size={20} className="stroke-[1.5]" />
-                <span className="text-[9px] tracking-widest uppercase font-medium">Gallery</span>
+            <Link href="/gallery" className={`flex flex-col items-center gap-2 px-2 transition-colors group ${isActive('/gallery') ? 'text-[#FFD700]' : 'text-gray-400 hover:text-white'}`}>
+                <CameraIcon size={26} className="stroke-[1.5]" />
+                <span className="text-[10px] tracking-widest uppercase font-bold">Gallery</span>
             </Link>
 
-            <Link href="/tickets" className={`flex flex-col items-center gap-1 transition-colors group ${isActive('/tickets') ? 'text-[#FFD700]' : 'text-gray-400 hover:text-white'}`}>
-                <Ticket size={20} className="stroke-[1.5]" />
-                <span className="text-[9px] tracking-widest uppercase font-medium">Tickets</span>
+            <Link href="/tickets" className={`flex flex-col items-center gap-2 px-2 transition-colors group ${isActive('/tickets') ? 'text-[#FFD700]' : 'text-gray-400 hover:text-white'}`}>
+                <Ticket size={26} className="stroke-[1.5]" />
+                <span className="text-[10px] tracking-widest uppercase font-bold">Tickets</span>
             </Link>
 
-            <Link href="/merchandise" className={`flex flex-col items-center gap-1 transition-colors group ${isActive('/merchandise') ? 'text-[#FFD700]' : 'text-gray-400 hover:text-white'}`}>
-                <ShoppingBag size={20} className="stroke-[1.5]" />
-                <span className="text-[9px] tracking-widest uppercase font-medium">Shop</span>
+            <Link href="/merchandise" className={`flex flex-col items-center gap-2 px-2 transition-colors group ${isActive('/merchandise') ? 'text-[#FFD700]' : 'text-gray-400 hover:text-white'}`}>
+                <ShoppingBag size={26} className="stroke-[1.5]" />
+                <span className="text-[10px] tracking-widest uppercase font-bold">Shop</span>
             </Link>
 
-            <button className="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors group">
-                <User size={20} className="stroke-[1.5]" />
-                <span className="text-[9px] tracking-widest uppercase font-medium">Profile</span>
+            <button className="flex flex-col items-center gap-2 px-2 text-gray-400 hover:text-white transition-colors group">
+                <User size={26} className="stroke-[1.5]" />
+                <span className="text-[10px] tracking-widest uppercase font-bold">Profile</span>
             </button>
         </div>
     );
