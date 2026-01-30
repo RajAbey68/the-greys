@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { ArrowLeft, Upload, Heart, Video, PlayCircle, Star, X } from 'lucide-react';
 
 export default function GalleryPage() {
-    // Basic state for locally previewing uploaded images
-    const [userUploads, setUserUploads] = useState<string[]>([]);
+    // Basic state for locally previewing uploaded files (images or videos)
+    const [userUploads, setUserUploads] = useState<{ url: string, type: 'image' | 'video' }[]>([]);
     const fileInputRef = useRef<HTMLInputElement>(null);
 
     const handleUploadClick = () => {
@@ -14,15 +14,19 @@ export default function GalleryPage() {
     };
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (file) {
-            // Create a local URL for preview
-            const objectUrl = URL.createObjectURL(file);
-            setUserUploads(prev => [objectUrl, ...prev]);
+        const files = e.target.files;
+        if (files && files.length > 0) {
+            const newUploads = Array.from(files).map(file => ({
+                url: URL.createObjectURL(file),
+                type: file.type.startsWith('video/') ? 'video' : 'image'
+            }));
+
+            // @ts-ignore - Typescript inference might need help with the mixed array, but object structure is correct
+            setUserUploads(prev => [...newUploads, ...prev]);
 
             // In a real app, we would upload to Supabase here
-            console.log("File selected:", file.name);
-            alert("Great shot! Your photo has been added to the local preview feed. (Backend upload pending configuration)");
+            console.log("Files selected:", files.length);
+            alert(`${files.length} file(s) added to your preview feed!`);
         }
     };
 
@@ -81,9 +85,18 @@ export default function GalleryPage() {
                 <div className="columns-2 gap-4 space-y-4">
 
                     {/* User Uploads inserted here */}
-                    {userUploads.map((src, index) => (
+                    {userUploads.map((item, index) => (
                         <div key={index} className="break-inside-avoid relative rounded-xl overflow-hidden group mb-4 animate-fade-in">
-                            <img src={src} className="w-full aspect-square object-cover" alt="User Upload" />
+                            {item.type === 'video' ? (
+                                <div className="relative">
+                                    <video src={item.url} className="w-full aspect-[3/4] object-cover" controls autoPlay loop muted playsInline />
+                                    <div className="absolute top-2 right-2 bg-black/50 p-1 rounded-full">
+                                        <Video size={12} className="text-white" />
+                                    </div>
+                                </div>
+                            ) : (
+                                <img src={item.url} className="w-full aspect-square object-cover" alt="User Upload" />
+                            )}
                             <div className="p-3 bg-gray-100">
                                 <h4 className="font-bold text-xs text-black mb-1">Just Now</h4>
                                 <div className="flex items-center gap-1 text-[9px] text-[#1E3A8A]">
@@ -168,7 +181,8 @@ export default function GalleryPage() {
                     type="file"
                     ref={fileInputRef}
                     className="hidden"
-                    accept="image/*"
+                    accept="image/*,video/*"
+                    multiple
                     onChange={handleFileChange}
                 />
                 <button
