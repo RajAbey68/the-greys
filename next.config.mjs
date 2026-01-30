@@ -1,6 +1,6 @@
 const nextConfig = {
     output: 'export',
-    basePath: '/the-greys',
+    basePath: '/the-grey',
     images: {
         unoptimized: true,
     },
