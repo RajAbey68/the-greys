@@ -72,7 +72,7 @@ export default function GalleryPage() {
                         <p className="text-white/70 text-[10px] font-sans">By Membership No. 402 • 45m ago</p>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 z-10"></div>
-                    <img src="/the-grey/social.png" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]" alt="Featured" />
+                    <img src="/the-greys/social.png" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]" alt="Featured" />
                 </div>
             </section>
 
@@ -98,7 +98,7 @@ export default function GalleryPage() {
                         <div className="absolute top-2 right-2 z-20">
                             <Video size={12} className="text-white" />
                         </div>
-                        <img src="/the-grey/royal-thomian-walkout.jpg" className="w-full aspect-[3/4] object-cover" alt="Vibe" />
+                        <img src="/the-greys/royal-thomian-walkout.jpg" className="w-full aspect-[3/4] object-cover" alt="Vibe" />
                         <div className="p-3 bg-gray-100">
                             <h4 className="font-bold text-xs text-black mb-1">Lounge Vibe</h4>
                             <div className="flex items-center gap-1 text-[9px] text-gray-500">
@@ -109,7 +109,7 @@ export default function GalleryPage() {
 
                     {/* Item 2 - Tall Photo */}
                     <div className="break-inside-avoid relative rounded-xl overflow-hidden group mb-4">
-                        <img src="/the-grey/merchandise-landing-v2.png" className="w-full aspect-[3/4] object-cover" alt="Style" />
+                        <img src="/the-greys/merchandise-landing-v2.png" className="w-full aspect-[3/4] object-cover" alt="Style" />
                         <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
                             <h4 className="font-bold text-xs text-white">Best Seats in the House</h4>
                         </div>
@@ -123,7 +123,7 @@ export default function GalleryPage() {
                                 <PlayCircle size={16} className="text-white fill-white" />
                             </div>
                         </div>
-                        <img src="/the-grey/royal-thomian-flags.png" className="w-full aspect-[3/4] object-cover" alt="Flags" />
+                        <img src="/the-greys/royal-thomian-flags.png" className="w-full aspect-[3/4] object-cover" alt="Flags" />
                         <div className="p-3 bg-gray-100">
                             <h4 className="font-bold text-xs text-black">The Arrival</h4>
                         </div>
@@ -131,7 +131,7 @@ export default function GalleryPage() {
 
                     {/* Item 4 */}
                     <div className="break-inside-avoid relative rounded-xl overflow-hidden group mb-4">
-                        <img src="/the-grey/royal-thomian-crest.png" className="w-full aspect-[3/4] object-cover bg-black p-4" alt="Legacy" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="w-full aspect-[3/4] object-cover bg-black p-4" alt="Legacy" />
                         <div className="p-3 bg-gray-100">
                             <h4 className="font-bold text-xs text-black">Legacy Displayed</h4>
                         </div>
@@ -139,7 +139,7 @@ export default function GalleryPage() {
 
                     {/* Item 5 */}
                     <div className="break-inside-avoid relative rounded-xl overflow-hidden group mb-4">
-                        <img src="/the-grey/grey-meetups.png" className="w-full aspect-[3/4] object-cover" alt="Class of 08" />
+                        <img src="/the-greys/grey-meetups.png" className="w-full aspect-[3/4] object-cover" alt="Class of 08" />
                         <div className="p-3 bg-gray-100">
                             <h4 className="font-bold text-xs text-black">Class of '08 Circle</h4>
                         </div>
@@ -152,7 +152,7 @@ export default function GalleryPage() {
                                 <PlayCircle size={16} className="text-white fill-white" />
                             </div>
                         </div>
-                        <img src="/the-grey/freeze-band.png" className="w-full aspect-[3/4] object-cover" alt="Party" />
+                        <img src="/the-greys/freeze-band.png" className="w-full aspect-[3/4] object-cover" alt="Party" />
                         <div className="p-3 bg-gray-100">
                             <h4 className="font-bold text-xs text-black">Enclosure Celebrations</h4>
                         </div>

@@ -21,7 +21,7 @@ export default function BigMatch() {
             <header className="relative h-[70vh] w-full overflow-hidden flex items-end pb-24 group">
                 {/* Background Image Placeholder */}
                 <div className="absolute inset-0 bg-slate-200">
-                    <img src="/the-grey/big-match-hero.png" className="w-full h-full object-cover opacity-90 transition-transform duration-[3s] group-hover:scale-105" alt="Cricket Grounds" />
+                    <img src="/the-greys/big-match-hero.png" className="w-full h-full object-cover opacity-90 transition-transform duration-[3s] group-hover:scale-105" alt="Cricket Grounds" />
                 </div>
 
                 {/* Minimal Overlay */}
@@ -31,7 +31,7 @@ export default function BigMatch() {
                     <span className="inline-block py-1 px-3 border border-black/20 rounded-full bg-white/50 backdrop-blur-md font-sans text-[9px] uppercase tracking-widest mb-6">Live Match Data</span>
                     <div className="flex items-center justify-center gap-8 mb-6">
                         {/* Logo - Assuming we use the crest for now as user didn't specify filename but asked for 'Logo at Left' */}
-                        <img src="/the-grey/royal-thomian-crest.png" className="w-24 h-auto object-contain" alt="The Grey Logo" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="w-24 h-auto object-contain" alt="The Grey Logo" />
                         <div className="text-left">
                             <h1 className="text-6xl md:text-8xl font-serif tracking-tighter leading-none text-black">
                                 The Grey
@@ -104,11 +104,11 @@ export default function BigMatch() {
                 <div className="bg-white p-6 shadow-xl shadow-black/5 border border-black/5 flex flex-col items-center justify-center text-center">
                     <h3 className="text-royal-gold uppercase tracking-widest text-[10px] mb-4">Official Sponsors</h3>
                     <div className="flex gap-12 overflow-x-auto w-full justify-center items-center py-2 no-scrollbar">
-                        <img src="/the-grey/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
-                        <img src="/the-grey/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
-                        <img src="/the-grey/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
-                        <img src="/the-grey/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
-                        <img src="/the-grey/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
+                        <img src="/the-greys/royal-thomian-crest.png" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" alt="Sponsor" />
                     </div>
                 </div>
             </section>
@@ -128,7 +128,7 @@ export default function BigMatch() {
                     <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/big-match-poster.png" className="w-full h-full object-cover transition-all duration-500" alt="Tickets" />
+                            <img src="/the-greys/big-match-poster.png" className="w-full h-full object-cover transition-all duration-500" alt="Tickets" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">Tickets</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Availability, Pickup Points & Ticket WhatsApp Group</p>
@@ -139,7 +139,7 @@ export default function BigMatch() {
                     <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/social.png" className="w-full h-full object-cover transition-all duration-500" alt="Gallery" />
+                            <img src="/the-greys/social.png" className="w-full h-full object-cover transition-all duration-500" alt="Gallery" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">The Gallery</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Uncurated & Unfiltered</p>
@@ -150,7 +150,7 @@ export default function BigMatch() {
                     <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/humour-rumour.png" className="w-full h-full object-cover transition-all duration-500" alt="Humour" />
+                            <img src="/the-greys/humour-rumour.png" className="w-full h-full object-cover transition-all duration-500" alt="Humour" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">Humour & Rumour</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Funny images, stories, sledging, memories & gossip</p>
@@ -161,7 +161,7 @@ export default function BigMatch() {
                     <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/food-spirits.png" className="w-full h-full object-cover transition-all duration-500" alt="Food & Spirits" />
+                            <img src="/the-greys/food-spirits.png" className="w-full h-full object-cover transition-all duration-500" alt="Food & Spirits" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">Food & Spirits</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Arrack, Champagne, Cocktails & Special Offers</p>
@@ -172,7 +172,7 @@ export default function BigMatch() {
                     <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/freeze-band.png" className="w-full h-full object-cover transition-all duration-500" alt="Entertainment" />
+                            <img src="/the-greys/freeze-band.png" className="w-full h-full object-cover transition-all duration-500" alt="Entertainment" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">The Grey Beat</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Links to Headline and other entertainment around The Grey</p>
@@ -183,7 +183,7 @@ export default function BigMatch() {
                     <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/grey-offers.png" className="w-full h-full object-cover transition-all duration-500" alt="Grey Offers" />
+                            <img src="/the-greys/grey-offers.png" className="w-full h-full object-cover transition-all duration-500" alt="Grey Offers" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">The Grey Offers</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Vouchers, discounts and invites offered to Grey Members</p>
@@ -194,7 +194,7 @@ export default function BigMatch() {
                     <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/mustangs.png" className="w-full h-full object-cover transition-all duration-500" alt="Shop" />
+                            <img src="/the-greys/mustangs.png" className="w-full h-full object-cover transition-all duration-500" alt="Shop" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">Grey Merchandise</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Official & UNOFFICIAL Merch For Sale</p>
@@ -205,7 +205,7 @@ export default function BigMatch() {
                     <div className="group text-center">
                         <div className="w-full h-32 mx-auto mb-4 overflow-hidden rounded-lg relative">
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/grey-meetups.png" className="w-full h-full object-cover transition-all duration-500" alt="Meetups" />
+                            <img src="/the-greys/grey-meetups.png" className="w-full h-full object-cover transition-all duration-500" alt="Meetups" />
                         </div>
                         <h3 className="font-serif text-lg mb-2">Grey Meet-Ups</h3>
                         <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Official & informal gatherings • Colombo, Overseas & Virtual plus useful links</p>
