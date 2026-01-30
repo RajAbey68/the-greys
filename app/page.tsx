@@ -7,11 +7,11 @@ export default function Home() {
         <main className="min-h-screen bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-400 via-gray-500 to-gray-600 text-black font-serif pb-24 relative selection:bg-yellow-700 selection:text-white">
 
             {/* Nav */}
-            <nav className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center z-50 bg-championship-white/90 backdrop-blur-md border-b border-burnished-silver/20">
+            <nav className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center z-50 bg-championship-white/95 backdrop-blur-md border-b border-black/10">
                 {/* Back button removed as this is now the Home page */}
                 <div className="w-5"></div>
                 <div className="text-center">
-                    <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-royal-gold font-medium">147th Battle of the Blues</p>
+                    <p className="font-sans text-sm md:text-base uppercase tracking-[0.25em] text-black font-extrabold shadow-sm">147th Battle of the Blues</p>
                 </div>
                 <div className="w-5"></div>
             </nav>
@@ -27,18 +27,18 @@ export default function Home() {
                 <div className="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-championship-white via-championship-white/80 to-transparent"></div>
 
                 <div className="relative z-10 px-8 w-full max-w-4xl mx-auto text-center">
-                    <span className="inline-block py-1 px-3 border border-black/20 rounded-full bg-white/50 backdrop-blur-md font-sans text-[9px] uppercase tracking-widest mb-6">Live Match Data</span>
-                    <div className="flex items-center justify-center gap-8 mb-6">
-                        {/* Logo - Assuming we use the crest for now as user didn't specify filename but asked for 'Logo at Left' */}
-                        <img src="/the-greys/royal-thomian-crest.png" className="w-24 h-auto object-contain" alt="The Grey Logo" />
+                    <span className="inline-block py-2 px-4 border border-black/20 rounded-full bg-white text-black font-sans text-xs md:text-sm font-bold uppercase tracking-widest mb-8 shadow-xl">Live Match Data</span>
+                    <div className="flex items-center justify-center gap-8 mb-8">
+                        {/* Logo */}
+                        <img src="/the-greys/royal-thomian-crest.png" className="w-32 md:w-40 h-auto object-contain drop-shadow-2xl" alt="The Grey Logo" />
                         <div className="text-left">
-                            <h1 className="text-6xl md:text-8xl font-serif tracking-tighter leading-none text-black">
+                            <h1 className="text-7xl md:text-9xl font-serif tracking-tighter leading-none text-black drop-shadow-sm">
                                 The Grey
                             </h1>
                         </div>
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-serif mb-4">
-                        <span className="text-royal-gold font-bold">147th Royal</span> <span className="text-black font-light mx-2">&</span> <span className="text-black font-bold">Thomian</span>
+                    <h2 className="text-3xl md:text-5xl font-serif mb-6 text-black drop-shadow-md">
+                        <span className="font-black">147th Royal</span> <span className="font-light mx-2">&</span> <span className="font-black">Thomian</span>
                     </h2>
 
                     {/* Schedule Strip & Join Actions */}
@@ -49,27 +49,25 @@ export default function Home() {
                             {/* 3-Day */}
                             <div className="text-center group relative cursor-pointer">
                                 <div className="flex flex-col items-center">
-                                    <span className="block text-xl md:text-2xl font-serif font-bold group-hover:text-royal-gold transition-colors">Mar 12–14, 2026</span>
-                                    <span className="text-[10px] uppercase tracking-widest text-black/70 mt-1">3-Day Match • SSC Grounds</span>
-                                    <div className="flex items-center gap-2 mt-2 opacity-50 md:opacity-0 group-hover:opacity-100 transition-opacity transform md:translate-y-2 group-hover:translate-y-0">
-                                        <span className="text-[9px] font-bold uppercase tracking-wider mr-1">Add to Cal:</span>
-                                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=147th+Royal+Thomian+Big+Match&dates=20260312/20260315&details=The+147th+Battle+of+the+Blues+Location:+SSC+Grounds&location=SSC+Grounds" target="_blank" className="text-[9px] bg-black/5 hover:bg-black/10 px-2 py-1 rounded border border-black/5">Google</a>
-                                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2026-03-12T04:30:00Z&enddt=2026-03-14T12:30:00Z&subject=147th%20Royal%20Thomian&location=SSC" target="_blank" className="text-[9px] bg-black/5 hover:bg-black/10 px-2 py-1 rounded border border-black/5">Outlook</a>
+                                    <span className="block text-3xl md:text-4xl font-serif font-black text-black mb-2">Mar 12–14, 2026</span>
+                                    <span className="text-sm md:text-base font-bold uppercase tracking-widest text-black/80">3-Day Match • SSC Grounds</span>
+                                    <div className="flex items-center gap-3 mt-4 opacity-100">
+                                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=147th+Royal+Thomian+Big+Match&dates=20260312/20260315&details=The+147th+Battle+of+the+Blues+Location:+SSC+Grounds&location=SSC+Grounds" target="_blank" className="text-xs bg-black text-white px-3 py-1.5 rounded font-bold uppercase tracking-wide hover:bg-gray-800">Google Cal</a>
+                                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2026-03-12T04:30:00Z&enddt=2026-03-14T12:30:00Z&subject=147th%20Royal%20Thomian&location=SSC" target="_blank" className="text-xs bg-black text-white px-3 py-1.5 rounded font-bold uppercase tracking-wide hover:bg-gray-800">Outlook</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="hidden md:block h-12 w-px bg-black/10"></div>
+                            <div className="hidden md:block h-16 w-1 bg-black/20"></div>
 
                             {/* One Day */}
                             <div className="text-center group relative cursor-pointer">
                                 <div className="flex flex-col items-center">
-                                    <span className="block text-xl md:text-2xl font-serif font-bold group-hover:text-royal-gold transition-colors">Mar 28, 2026</span>
-                                    <span className="text-[10px] uppercase tracking-widest text-black/70 mt-1">Mustangs Trophy • Day-Night</span>
-                                    <div className="flex items-center gap-2 mt-2 opacity-50 md:opacity-0 group-hover:opacity-100 transition-opacity transform md:translate-y-2 group-hover:translate-y-0">
-                                        <span className="text-[9px] font-bold uppercase tracking-wider mr-1">Add to Cal:</span>
-                                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=147th+Royal+Thomian+Mustangs+Trophy&dates=20260328/20260329&details=Limited+Overs+Encounter&location=SSC+Grounds" target="_blank" className="text-[9px] bg-black/5 hover:bg-black/10 px-2 py-1 rounded border border-black/5">Google</a>
-                                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2026-03-28T08:30:00Z&enddt=2026-03-28T18:00:00Z&subject=147th%20Mustangs%20Trophy&location=SSC" target="_blank" className="text-[9px] bg-black/5 hover:bg-black/10 px-2 py-1 rounded border border-black/5">Outlook</a>
+                                    <span className="block text-3xl md:text-4xl font-serif font-black text-black mb-2">Mar 28, 2026</span>
+                                    <span className="text-sm md:text-base font-bold uppercase tracking-widest text-black/80">Mustangs Trophy • Day-Night</span>
+                                    <div className="flex items-center gap-3 mt-4 opacity-100">
+                                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=147th+Royal+Thomian+Mustangs+Trophy&dates=20260328/20260329&details=Limited+Overs+Encounter&location=SSC+Grounds" target="_blank" className="text-xs bg-black text-white px-3 py-1.5 rounded font-bold uppercase tracking-wide hover:bg-gray-800">Google Cal</a>
+                                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2026-03-28T08:30:00Z&enddt=2026-03-28T18:00:00Z&subject=147th%20Mustangs%20Trophy&location=SSC" target="_blank" className="text-xs bg-black text-white px-3 py-1.5 rounded font-bold uppercase tracking-wide hover:bg-gray-800">Outlook</a>
                                     </div>
                                 </div>
                             </div>
@@ -79,8 +77,8 @@ export default function Home() {
                         <div className="flex flex-col items-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 border-t border-black/5 pt-6 w-3/4 mx-auto">
                             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
                                 {/* Member Join */}
-                                <button className="bg-gradient-to-r from-black to-gray-800 text-royal-gold hover:to-black px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] hover:shadow-lg transition-all flex items-center gap-2 border border-yellow-700/50">
-                                    <Users size={14} /> Become a Member
+                                <button className="bg-black text-white hover:bg-gray-900 px-8 py-3 rounded-full text-sm font-bold uppercase tracking-[0.2em] shadow-xl transition-all flex items-center gap-3 border-2 border-transparent hover:border-black transform hover:scale-105">
+                                    <Users size={18} /> Become a Member
                                 </button>
 
                                 <div className="hidden md:block h-6 w-px bg-black/10"></div>
@@ -118,8 +116,8 @@ export default function Home() {
             {/* Match Essentials */}
             <section className="max-w-6xl mx-auto px-6 py-24 border-t border-midnight-slate/10">
                 <div className="text-center mb-16">
-                    <span className="text-[10px] text-royal-gold uppercase tracking-[0.2em]">The Grey Centre</span>
-                    <h2 className="text-4xl font-serif text-royal-gold mt-2">Match Essentials</h2>
+                    <span className="text-base font-bold text-black uppercase tracking-[0.3em]">The Grey Centre</span>
+                    <h2 className="text-5xl md:text-6xl font-serif text-black font-black mt-4">Match Essentials</h2>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-4 md:gap-12">
@@ -129,9 +127,9 @@ export default function Home() {
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/tickets-landing.png" className="w-full h-full object-cover transition-all duration-500" alt="Tickets" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">Tickets</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Availability, Pickup Points & Ticket WhatsApp Group</p>
-                        <Link href="#" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Box Office</Link>
+                        <h3 className="font-serif text-2xl font-bold text-black mb-3">Tickets</h3>
+                        <p className="font-sans text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">Availability, Pickup Points & Ticket WhatsApp Group</p>
+                        <Link href="#" className="inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-gray-800 transition-colors">Box Office</Link>
                     </div>
 
                     {/* Gallery */}
@@ -140,9 +138,9 @@ export default function Home() {
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/social.png" className="w-full h-full object-cover transition-all duration-500" alt="Gallery" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">The Gallery</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Uncurated & Unfiltered</p>
-                        <Link href="/gallery" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Upload / View</Link>
+                        <h3 className="font-serif text-2xl font-bold text-black mb-3">The Gallery</h3>
+                        <p className="font-sans text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">Uncurated & Unfiltered</p>
+                        <Link href="/gallery" className="inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-gray-800 transition-colors">Upload / View</Link>
                     </div>
 
 
@@ -158,9 +156,9 @@ export default function Home() {
                                 allowFullScreen
                             ></iframe>
                         </div>
-                        <h3 className="font-serif text-lg mb-2">About the Royal Thomian and The Grey</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">A legacy of brotherhood and rivalry since 1879</p>
-                        <Link href="/history" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Watch Full Story</Link>
+                        <h3 className="font-serif text-2xl font-bold text-black mb-3">About the Royal Thomian</h3>
+                        <p className="font-sans text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">A legacy of brotherhood and rivalry since 1879</p>
+                        <Link href="/history" className="inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-gray-800 transition-colors">Watch Story</Link>
                     </div>
 
                     {/* The Grey Beat (Entertainment) - Row 2 */}
@@ -169,9 +167,9 @@ export default function Home() {
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/freeze-band.png" className="w-full h-full object-cover transition-all duration-500" alt="Entertainment" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">The Grey Beat</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Links to Headline and other entertainment around The Grey</p>
-                        <Link href="/entertainment" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Lineup</Link>
+                        <h3 className="font-serif text-2xl font-bold text-black mb-3">The Grey Beat</h3>
+                        <p className="font-sans text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">Links to Headline and other entertainment</p>
+                        <Link href="/entertainment" className="inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-gray-800 transition-colors">Lineup</Link>
                     </div>
 
                     {/* The Grey Offers */}
@@ -180,9 +178,9 @@ export default function Home() {
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/grey-offers.png" className="w-full h-full object-cover transition-all duration-500" alt="Grey Offers" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">The Grey Offers</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Vouchers, discounts and invites offered to Grey Members</p>
-                        <Link href="/offers" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">View Offers</Link>
+                        <h3 className="font-serif text-2xl font-bold text-black mb-3">The Grey Offers</h3>
+                        <p className="font-sans text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">Vouchers, discounts and invites for Members</p>
+                        <Link href="/offers" className="inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-gray-800 transition-colors">View Offers</Link>
                     </div>
 
                     {/* Grey Merchandise - Row 2 */}
@@ -191,9 +189,9 @@ export default function Home() {
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/merchandise-landing-v2.png" className="w-full h-full object-cover transition-all duration-500" alt="Shop" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">Grey Merchandise</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Official & UNOFFICIAL Merch For Sale</p>
-                        <Link href="/merchandise" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Browse Store</Link>
+                        <h3 className="font-serif text-2xl font-bold text-black mb-3">Grey Merchandise</h3>
+                        <p className="font-sans text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">Official & UNOFFICIAL Merch For Sale</p>
+                        <Link href="/merchandise" className="inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-gray-800 transition-colors">Browse Store</Link>
                     </div>
 
                     {/* Grey Meet-Up */}
@@ -202,9 +200,9 @@ export default function Home() {
                             <div className="absolute inset-0 bg-midnight-slate/20 group-hover:bg-transparent transition-all z-10"></div>
                             <img src="/the-greys/grey-meetups.png" className="w-full h-full object-cover transition-all duration-500" alt="Meetups" />
                         </div>
-                        <h3 className="font-serif text-lg mb-2">Grey Meet-Ups</h3>
-                        <p className="font-sans text-[10px] text-black/70 mb-4 px-2">Official & informal gatherings • Colombo, Overseas & Virtual plus useful links</p>
-                        <Link href="/meetups" className="uppercase text-[9px] tracking-widest border-b border-gray-300 pb-1 group-hover:border-midnight-slate transition-colors">Find a Meet-Up</Link>
+                        <h3 className="font-serif text-2xl font-bold text-black mb-3">Grey Meet-Ups</h3>
+                        <p className="font-sans text-sm font-medium text-black/80 mb-6 px-2 leading-relaxed">Global gatherings • Colombo, Overseas & Virtual</p>
+                        <Link href="/meetups" className="inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-gray-800 transition-colors">Find a Meet-Up</Link>
                     </div>
                 </div>
 
