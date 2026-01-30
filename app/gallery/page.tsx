@@ -51,7 +51,7 @@ export default function GalleryPage() {
 
             {/* Title Block */}
             <div className="pt-32 pb-8 px-6 text-center max-w-4xl mx-auto">
-                <h1 className="text-4xl md:text-5xl font-serif italic text-black mb-2">
+                <h1 className="text-4xl md:text-5xl font-serif font-bold text-black mb-2">
                     Uncurated & Unfiltered
                 </h1>
                 <p className="font-sans text-xs text-gray-500 uppercase tracking-wide">
