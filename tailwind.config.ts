@@ -10,7 +10,7 @@ const config: Config = {
         extend: {
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
-                serif: ['Playfair Display', 'serif'],
+                serif: ['Cinzel', 'serif'],
             },
             colors: {
                 silver: {
