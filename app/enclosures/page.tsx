@@ -29,7 +29,7 @@ export default function Enclosures() {
                     <div className="bg-white/80 backdrop-blur-sm p-8 border border-black/5 hover:border-black/20 transition-all group shadow-2xl shadow-black/5 rounded-sm">
                         <div className="mb-6 h-48 overflow-hidden relative rounded-sm">
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/royal-thomian-walkout.jpg" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Mustangs" />
+                            <img src="/the-greys/royal-thomian-walkout.jpg" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Mustangs" />
                         </div>
                         <div className="flex justify-between items-start mb-4">
                             <h3 className="text-2xl font-serif text-black group-hover:text-royal-gold transition-colors">The Mustangs</h3>
@@ -62,7 +62,7 @@ export default function Enclosures() {
                     <div className="bg-white/80 backdrop-blur-sm p-8 border border-black/5 hover:border-black/20 transition-all group shadow-2xl shadow-black/5 rounded-sm">
                         <div className="mb-6 h-48 overflow-hidden relative rounded-sm">
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all z-10"></div>
-                            <img src="/the-grey/royal-thomian-flags-formal.png" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Royal Enclosure" />
+                            <img src="/the-greys/royal-thomian-flags-formal.png" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Royal Enclosure" />
                         </div>
                         <div className="flex justify-between items-start mb-4">
                             <h3 className="text-2xl font-serif text-black group-hover:text-royal-gold transition-colors">Royal Enclosure</h3>
@@ -112,7 +112,7 @@ export default function Enclosures() {
                     <div className="bg-white/80 backdrop-blur-sm p-8 border border-black/5 hover:border-black/20 transition-all group shadow-2xl shadow-black/5 rounded-sm">
                         <div className="mb-6 h-48 bg-gray-100 flex items-center justify-center relative overflow-hidden rounded-sm">
                             <div className="absolute inset-0 bg-slate-200">
-                                <img src="/the-grey/big-match-hero.png" className="w-full h-full object-cover grayscale opacity-50" key="stands" alt="Stands" />
+                                <img src="/the-greys/big-match-hero.png" className="w-full h-full object-cover grayscale opacity-50" key="stands" alt="Stands" />
                             </div>
                         </div>
                         <div className="flex justify-between items-start mb-4">

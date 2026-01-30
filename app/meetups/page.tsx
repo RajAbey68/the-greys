@@ -40,7 +40,7 @@ export default function MeetupsPage() {
                 <div className="w-full h-64 md:h-96 rounded-sm overflow-hidden relative shadow-2xl shadow-black/20">
                     <div className="absolute inset-0 bg-black/40 z-10"></div>
                     {/* Using the Meetups image we generated */}
-                    <img src="/the-grey/grey-meetups.png" className="w-full h-full object-cover" alt="Global Community" />
+                    <img src="/the-greys/grey-meetups.png" className="w-full h-full object-cover" alt="Global Community" />
                     <div className="absolute bottom-0 left-0 p-8 z-20 text-white">
                         <h2 className="font-serif text-3xl">Colombo HQ</h2>
                         <p className="font-sans text-xs opacity-80">The epicenter of the action. SSC Grounds.</p>
