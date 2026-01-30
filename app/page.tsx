@@ -38,7 +38,7 @@ export default function Home() {
                         </div>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-serif mb-6 text-black drop-shadow-md">
-                        <span className="font-black">147th Royal</span> <span className="font-light mx-2">&</span> <span className="font-black">Thomian</span>
+                        <span className="font-black text-[#FFD700] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">147th Royal</span> <span className="font-light mx-2 text-white">&</span> <span className="font-black text-[#1E3A8A] drop-shadow-[0_2px_2px_rgba(255,255,255,0.5)]">Thomian</span>
                     </h2>
 
                     {/* Schedule Strip & Join Actions */}
