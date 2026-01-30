@@ -38,36 +38,37 @@ export default function Home() {
                         </div>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-serif mb-6 text-white drop-shadow-md">
-                        <span className="font-black text-[#FFD700] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">147th Royal</span> <span className="font-light mx-2 text-brushed-silver">&</span> <span className="font-black text-[#1E3A8A] drop-shadow-[0_2px_4px_rgba(255,255,255,0.3)]">Thomian</span>
+                        <span className="font-black text-[#FFD700] drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]">147th Royal</span> <span className="font-light mx-2 text-white/50">&</span> <span className="font-black text-[#3B82F6] drop-shadow-[0_0_15px_rgba(59,130,246,0.6)]">Thomian</span>
                     </h2>
+
 
                     {/* Schedule Strip & Join Actions */}
                     <div className="mt-8 bg-midnight-slate/80 backdrop-blur-md border-t border-b border-brushed-silver/20 py-6">
                         {/* Dates */}
-                        <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8 md:gap-16 font-sans text-brushed-silver mb-6 px-4">
+                        <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8 md:gap-16 font-sans text-white mb-6 px-4">
 
                             {/* 3-Day */}
                             <div className="text-center group relative cursor-pointer">
                                 <div className="flex flex-col items-center">
-                                    <span className="block text-3xl md:text-4xl font-serif font-black text-white mb-2">Mar 12–14, 2026</span>
-                                    <span className="text-sm md:text-base font-bold uppercase tracking-widest text-brushed-silver/80">3-Day Match • SSC Grounds</span>
-                                    <div className="flex items-center gap-3 mt-4 opacity-100">
-                                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=147th+Royal+Thomian+Big+Match&dates=20260312/20260315&details=The+147th+Battle+of+the+Blues+Location:+SSC+Grounds&location=SSC+Grounds" target="_blank" className="text-xs bg-brushed-silver/10 border border-brushed-silver/30 text-brushed-silver px-3 py-1.5 rounded font-bold uppercase tracking-wide hover:bg-brushed-silver hover:text-midnight-slate transition-colors">Google Cal</a>
-                                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2026-03-12T04:30:00Z&enddt=2026-03-14T12:30:00Z&subject=147th%20Royal%20Thomian&location=SSC" target="_blank" className="text-xs bg-brushed-silver/10 border border-brushed-silver/30 text-brushed-silver px-3 py-1.5 rounded font-bold uppercase tracking-wide hover:bg-brushed-silver hover:text-midnight-slate transition-colors">Outlook</a>
+                                    <span className="block text-4xl md:text-5xl font-serif font-black text-white mb-2 drop-shadow-lg">Mar 12–14, 2026</span>
+                                    <span className="text-sm md:text-base font-bold uppercase tracking-widest text-brushed-silver">3-Day Match • SSC Grounds</span>
+                                    <div className="flex items-center gap-3 mt-6 opacity-100">
+                                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=147th+Royal+Thomian+Big+Match&dates=20260312/20260315&details=The+147th+Battle+of+the+Blues+Location:+SSC+Grounds&location=SSC+Grounds" target="_blank" className="text-xs bg-white text-black border border-white px-4 py-2 rounded-full font-black uppercase tracking-wide hover:bg-gray-200 hover:scale-105 transition-all shadow-[0_0_15px_rgba(255,255,255,0.4)]">Google Cal</a>
+                                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2026-03-12T04:30:00Z&enddt=2026-03-14T12:30:00Z&subject=147th%20Royal%20Thomian&location=SSC" target="_blank" className="text-xs bg-transparent border-2 border-white text-white px-4 py-2 rounded-full font-black uppercase tracking-wide hover:bg-white hover:text-black hover:scale-105 transition-all">Outlook</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="hidden md:block h-16 w-px bg-brushed-silver/20"></div>
+                            <div className="hidden md:block h-20 w-px bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
 
                             {/* One Day */}
                             <div className="text-center group relative cursor-pointer">
                                 <div className="flex flex-col items-center">
-                                    <span className="block text-3xl md:text-4xl font-serif font-black text-white mb-2">Mar 28, 2026</span>
-                                    <span className="text-sm md:text-base font-bold uppercase tracking-widest text-brushed-silver/80">Mustangs Trophy • Day-Night</span>
-                                    <div className="flex items-center gap-3 mt-4 opacity-100">
-                                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=147th+Royal+Thomian+Mustangs+Trophy&dates=20260328/20260329&details=Limited+Overs+Encounter&location=SSC+Grounds" target="_blank" className="text-xs bg-brushed-silver/10 border border-brushed-silver/30 text-brushed-silver px-3 py-1.5 rounded font-bold uppercase tracking-wide hover:bg-brushed-silver hover:text-midnight-slate transition-colors">Google Cal</a>
-                                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2026-03-28T08:30:00Z&enddt=2026-03-28T18:00:00Z&subject=147th%20Mustangs%20Trophy&location=SSC" target="_blank" className="text-xs bg-brushed-silver/10 border border-brushed-silver/30 text-brushed-silver px-3 py-1.5 rounded font-bold uppercase tracking-wide hover:bg-brushed-silver hover:text-midnight-slate transition-colors">Outlook</a>
+                                    <span className="block text-4xl md:text-5xl font-serif font-black text-white mb-2 drop-shadow-lg">Mar 28, 2026</span>
+                                    <span className="text-sm md:text-base font-bold uppercase tracking-widest text-brushed-silver">Mustangs Trophy • Day-Night</span>
+                                    <div className="flex items-center gap-3 mt-6 opacity-100">
+                                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=147th+Royal+Thomian+Mustangs+Trophy&dates=20260328/20260329&details=Limited+Overs+Encounter&location=SSC+Grounds" target="_blank" className="text-xs bg-white text-black border border-white px-4 py-2 rounded-full font-black uppercase tracking-wide hover:bg-gray-200 hover:scale-105 transition-all shadow-[0_0_15px_rgba(255,255,255,0.4)]">Google Cal</a>
+                                        <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2026-03-28T08:30:00Z&enddt=2026-03-28T18:00:00Z&subject=147th%20Mustangs%20Trophy&location=SSC" target="_blank" className="text-xs bg-transparent border-2 border-white text-white px-4 py-2 rounded-full font-black uppercase tracking-wide hover:bg-white hover:text-black hover:scale-105 transition-all">Outlook</a>
                                     </div>
                                 </div>
                             </div>
