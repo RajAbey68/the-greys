@@ -18,7 +18,7 @@ export default function RootLayout({
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Cinzel:wght@400;600;800&display=swap" rel="stylesheet" />
             </head>
-            <body className="font-sans bg-charcoal text-silver-100 antialiased">
+            <body className="font-sans bg-midnight-slate text-brushed-silver antialiased">
                 {children}
             </body>
         </html>

@@ -4,16 +4,16 @@
 
 :root {
   --foreground-rgb: 226, 232, 240;
-  --background-start-rgb: 18, 18, 18;
-  --background-end-rgb: 18, 18, 18;
+  /* brushed-silver text */
+  --background-start-rgb: 2, 6, 23;
+  /* midnight-slate */
+  --background-end-rgb: 15, 23, 42;
+  /* slightly lighter slate for gradient */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }

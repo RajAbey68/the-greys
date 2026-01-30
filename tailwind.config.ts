@@ -21,27 +21,19 @@ const config: Config = {
                     500: '#737373',
                 },
                 // Grey Horse Elite Palette
-                'charcoal': '#1A1A1A',  // Deep background
-                'slate-grey': '#2D3436', // Cards
-                'brushed-silver': '#B0B3B8', // Accents
+                'charcoal': '#1A1A1A',
+                'slate-grey': '#2D3436',
 
-                // Royal-Thomian Palette
-                'royal-gold': '#FFD700', // Bright Logo Gold
-                'royal-blue': '#1E3A8A', // Deep Royal Blue
-                'thomian-blue': '#000033', // Dark Navy/Blackish Blue
-                'thomian-black': '#050505', // True Black
+                // New Elite Dark Palette
+                'midnight-slate': '#020617', // Deepest slate/black for background
+                'championship-royal-blue': '#1E40AF', // Vibrant royal blue for actions
+                'brushed-silver': '#E2E8F0', // Light silver for elegant borders
+                'royal-gold': '#FFD700', // Keep gold for accents
 
-                // Championship Heritage Palette
-                'championship-white': '#F9FAFB', // Clean airy luxury
-                'midnight-slate': '#111827',     // Historic grit
-                'burnished-silver': '#8E8E93',   // Antique silver
-
-                // Legacy / Horse Color Palette (Keeping for reference or mix)
-                'iron': '#0F1115',      // Raw Gunmetal / Steel
-                'blue-roan': '#1E2329', // Cool-Toned Slate
-                'rose-grey': '#C8C2BC', // Warm Cement
-                'dapple': '#7A7D85',    // Polished Concrete
-                'fleabitten': '#ECECE9' // Speckled Granite
+                // Legacy support
+                'royal-blue': '#1E40AF',
+                'thomian-blue': '#000033',
+                'championship-white': '#F8FAFC',
             }
         },
     },
