@@ -1,4 +1,4 @@
-# The Greys - Hospitality & Private Membership
+# The Grey - Hospitality & Private Membership
 
 This is a Next.js project bootstrapped manually due to network restrictions during setup.
 
