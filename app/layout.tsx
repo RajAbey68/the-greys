@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-    title: 'The Greys | Hospitality & Private Membership',
-    description: 'Exclusive access to The Greys events and membership.',
+    title: 'The Grey | Hospitality & Private Membership',
+    description: 'Exclusive access to The Grey events and membership.',
 };
 
 export default function RootLayout({

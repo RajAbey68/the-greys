@@ -13,7 +13,7 @@ export default function FilterBar() {
                         <span className="font-serif text-iron text-lg italic">G</span>
                     </div>
                     <div>
-                        <h1 className="text-[10px] uppercase tracking-[0.3em] text-iron">The Greys</h1>
+                        <h1 className="text-[10px] uppercase tracking-[0.3em] text-iron">The Grey</h1>
                         <p className="text-[9px] text-dapple uppercase tracking-widest">Club Events</p>
                     </div>
                 </div>

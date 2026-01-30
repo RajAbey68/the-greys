@@ -128,7 +128,7 @@ export default function MeetupsPage() {
                         </div>
                         <h3 className="font-serif text-3xl mb-4">Can't make it to a hub?</h3>
                         <p className="font-sans text-xs text-gray-400 mb-8 max-w-lg mx-auto">
-                            Join the official The Greys Virtual Watch Party on Zoom. Banter, commentary, and drinks from your living room.
+                            Join the official The Grey Virtual Watch Party on Zoom. Banter, commentary, and drinks from your living room.
                         </p>
                         <button className="bg-white text-black hover:bg-royal-gold hover:text-black hover:border-royal-gold px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] transition-all flex items-center gap-2 mx-auto">
                             <Video size={14} /> Get Zoom Link
